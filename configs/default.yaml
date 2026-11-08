@@ -1,0 +1,13 @@
+source: https://huggingface.co/datasets/defeatbeta/yahoo-finance-data (stock_prices, stock_profile; ODC-BY)
+sha256:
+  stock_prices: 4c522ec0dee02cb6554b5c3e4929d512327715c8f89670f9b1898b2403912f98
+  stock_profile: b57443c42ffcc48e9b7ef5b6c05df09e4acc433d14ec25306a8af9ac4e65de8f
+start: "1999-01-31"        # first formation month with 12 months of history
+universe_top: 1000         # largest 1,000 US-listed operating companies by trailing 12-month dollar volume
+deciles: 10
+vol_target: 0.12           # Barroso & Santa-Clara target, annualised
+vol_lookback_days: 126     # six months of daily winners-minus-losers returns
+max_leverage: 2.0
+bear_months: 24            # Daniel & Moskowitz bear indicator
+split: "2015-12-31"        # pre-registered: results reported for 1999-2015 and 2016-2026 separately
+notional_usd: 100000000

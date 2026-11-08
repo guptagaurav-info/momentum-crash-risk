@@ -1,0 +1,10 @@
+flowchart LR
+  A["US stock prices and profiles<br/>public mirror, 1998-2026"]:::src --> B["Liquid universe<br/>top 1,000 by dollar volume"]:::code
+  B --> C["12-1 momentum<br/>deciles each month"]:::code
+  C --> D["Winners minus losers<br/>monthly and daily"]:::code
+  D --> E["Market states<br/>bear indicator, rebounds"]:::check
+  D --> F["Volatility scaling<br/>12% target, 6-month lookback"]:::code
+  F --> G["Split-sample check<br/>1999-2015 vs 2016-2026"]:::check
+  classDef src fill:#DCE6F2,stroke:#1F3A5F,color:#222
+  classDef code fill:#E6E1F2,stroke:#5B4B8A,color:#222
+  classDef check fill:#F6DDD8,stroke:#B5473A,color:#222
